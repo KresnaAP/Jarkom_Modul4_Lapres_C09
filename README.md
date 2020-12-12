@@ -7,7 +7,7 @@ Praktikum Modul 4 berupa *Subnetting dan Routing*.
 
 
 ## Soal
-![Soal](img/soal.PNG)
+![Soal](img/soal.png)
 
 Catatan
 1. Deadline hari Rabu, 9 Desember 2020 pukul 22.00
@@ -31,11 +31,11 @@ Hal yang perlu diperhatikan
 3. Maksimal menghubungi asisten untuk demo hari Kamis, 10 Desember 2020 pukul
     20.00 WIB
 4. Pengurangan nilai akan dilakukan ketika:
-    a. Melanggar salah satu dari tulisan diatas.
-    b. Hasil perhitungan untuk VLSM / CIDR, berbeda dengan di CPT / UML
-    c. Pembagian IP kurang efisien
-    d. Routing kurang efisien
-    e. Tidak bisa menjelaskan cara perhitungan VLSM dan CIDR
+    1. Melanggar salah satu dari tulisan diatas.
+    2. Hasil perhitungan untuk VLSM / CIDR, berbeda dengan di CPT / UML
+    3. Pembagian IP kurang efisien
+    4. Routing kurang efisien
+    5. Tidak bisa menjelaskan cara perhitungan VLSM dan CIDR
     
     
 ## Jawaban
