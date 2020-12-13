@@ -69,7 +69,56 @@ Hal yang perlu diperhatikan
 4. Dari pohon tersebut akan mendapat pembagian IP sebagai berikut.
     
     ![Vlsm3](img/vlsm3.png)
-5. Untuk file .pkt dapat diakses [disini](Modul4_KelompokC09_Jarkom2020_VLSM.pkt).
+5. Routing
+    
+    ![Vlsm3](img/vlsm4.png)
+    1. SURABAYA
+        ```
+        192.168.2.0/23 via 192.168.0.10
+        192.168.0.16/28 via 192.168.0.10
+        192.168.12.0/22 via 192.168.0.10
+        192.168.0.12/30 via 192.168.0.10
+        192.168.1.0/24 via 192.168.0.10
+        192.168.16.0/22 via 192.168.0.10
+        192.168.8.0/22 via 192.168.0.2
+        192.168.0.4/30 via 192.168.0.2
+        192.168.24.0/21 via 192.168.0.2
+        192.168.0.128/25 via 192.168.0.2
+        10.151.77.84/30 via 192.168.0.10
+        ```
+    2. PASURUAN
+        ```
+        0.0.0.0 via 192.168.0.1
+        192.168.0.128/25 via 192.168.0.6
+        192.168.24.0/21 via 192.168.0.6
+        ```
+    3. PROBOLINGGO
+        ```
+        0.0.0.0/0 via 192.168.0.5
+        ```
+    4. BATU
+        ```
+        0.0.0.0/0 via 192.168.0.9
+        192.168.0.16/28 via 192.168.2.3
+        10.151.77.84/30 via 192.168.0.14
+        192.168.1.0/24 via 192.168.0.14
+        192.168.16.0/22 via 192.168.0.14
+        ```
+    5. MADIUN
+        ```
+        0.0.0.0/0 via 192.168.2.1
+        ```
+    6. KEDIRI
+        ```
+        192.168.16.0/22 via 192.168.1.3
+        0.0.0.0/0 via 192.168.0.13
+        ```
+    7. BLITAR
+        ```
+        0.0.0.0/0 via 192.168.1.1
+        ```
+        
+6. Untuk file .pkt dapat diakses [disini](Modul4_KelompokC09_Jarkom2020_VLSM.pkt).
 
 ### CIDR - UML
 1. Membagi jaringan pada soal menjadi seperti gambar berikut.
@@ -82,3 +131,41 @@ Hal yang perlu diperhatikan
     ![Cidr3](img/cidr3.png)  
 4. Membuat `topologi.sh`
 5. Membuat `bye.sh`
+6. Routing
+    route add -net <NID subnet> netmask <netmask> gw <IP gateway>
+    
+    1. SURABAYA
+        ```
+        route add -net 192.168.128.0 netmask 255.255.192.0 gw 192.168.192.2
+        route add -net 192.168.0.0 netmask 255.255.224.0 gw 192.168.32.2
+        route add -net 10.151.77.84 netmask 255.255.255.252 gw 192.168.32.2
+        ```
+    2. BATU 
+        ```
+        route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.32.1
+        route add -net 192.168.0.0 netmask 255.255.248.0 gw 192.168.8.2
+        route add -net 192.168.18.0 netmask 255.255.255.240 gw 192.168.16.3
+        route add -net 10.151.77.84 netmask 255.255.255.252 gw 192.168.8.2
+        ```
+    3. KEDIRI 
+        ```
+        route add -net 192.168.0.0 netmask 255.255.252.0 gw 192.168.4.3
+        route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.8.1
+        ```
+    4. PASURUAN 
+        ```
+        route add -net 192.168.128.0 netmask 255.255.240.0 gw 192.168.144.2
+        route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.192.1
+        ```
+    5. PROBOLINGGO
+        ```
+        route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.144.1
+        ```
+    6. MADIUN
+        ```
+        route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.16.1
+        ```
+    7. BLITAR
+        ```
+        route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.4.1
+        ```
