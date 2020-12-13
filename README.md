@@ -73,7 +73,7 @@ Hal yang perlu diperhatikan
 
 ### CIDR - UML
 1. Membagi jaringan pada soal menjadi seperti gambar berikut.
-    ![Cidr](img/cidr1.png | width=500)  
+    <img src="img/cidr1.png" width="500">
     ![Server](img/server.png)
 2. Pembagian IP dengan pohon berdasarkan penggabungan subnet yang telah dilakukan.
     ![Cidr](img/cidr2.png)  
