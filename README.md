@@ -70,8 +70,6 @@ Hal yang perlu diperhatikan
     
     ![Vlsm3](img/vlsm3.png)
 5. Routing
-    
-    ![Vlsm3](img/vlsm4.png)
     1. SURABAYA
         ```
         192.168.2.0/23 via 192.168.0.10
@@ -130,10 +128,10 @@ Hal yang perlu diperhatikan
 
     ![Cidr3](img/cidr3.png)  
 4. Membuat `topologi.sh`
+
 5. Membuat `bye.sh`
+
 6. Routing
-    route add -net <NID subnet> netmask <netmask> gw <IP gateway>
-    
     1. SURABAYA
         ```
         route add -net 192.168.128.0 netmask 255.255.192.0 gw 192.168.192.2
