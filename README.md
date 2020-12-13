@@ -73,12 +73,12 @@ Hal yang perlu diperhatikan
 
 ### CIDR - UML
 1. Membagi jaringan pada soal menjadi seperti gambar berikut.
-    <img src="img/cidr1.png" width="500">
+    ![Cidr1](img/cidr1.png)  
     ![Server](img/server.png)
 2. Pembagian IP dengan pohon berdasarkan penggabungan subnet yang telah dilakukan.
-    ![Cidr](img/cidr2.png)  
+    ![Cidr2](img/cidr2.png)  
 3. Berdasarkan perhitungan, maka didapatkan pembagian IP sebagai berikut.
 
-    ![Cidr](img/cidr3.png)  
+    ![Cidr3](img/cidr3.png)  
 4. Membuat `topologi.sh`
 5. Membuat `bye.sh`
