@@ -44,6 +44,7 @@ Hal yang perlu diperhatikan
 1. Membagi jaringan pada soal menjadi 13 subnet.
     ![Vlsm1](img/vlsm1.png)
     ![Server](img/server.png)
+    
 2.  Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan melakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
     | Subnet  | Jumlah IP | Netmask   |
     | ------- | --------- | --------- |
@@ -66,16 +67,18 @@ Hal yang perlu diperhatikan
 3. Subnetting dengan menggunakan pohon untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada.
     ![Vlsm2](img/vlsm2.png)
 4. Dari pohon tersebut akan mendapat pembagian IP sebagai berikut.
+    
     ![Vlsm3](img/vlsm3.png)
 5. Untuk file .pkt dapat diakses [disini](Modul4_KelompokC09_Jarkom2020_VLSM.pkt).
 
 ### CIDR - UML
 1. Membagi jaringan pada soal menjadi seperti gambar berikut.
-    ![Cidr](img/cidr1.png)  
+    ![Cidr](img/cidr1.png | width=500)  
     ![Server](img/server.png)
 2. Pembagian IP dengan pohon berdasarkan penggabungan subnet yang telah dilakukan.
     ![Cidr](img/cidr2.png)  
 3. Berdasarkan perhitungan, maka didapatkan pembagian IP sebagai berikut.
+
     ![Cidr](img/cidr3.png)  
 4. Membuat `topologi.sh`
 5. Membuat `bye.sh`
