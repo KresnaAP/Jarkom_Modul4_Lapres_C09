@@ -39,3 +39,36 @@ Hal yang perlu diperhatikan
     
     
 ## Jawaban
+
+### VLSM - CPT
+1. Membagi jaringan pada soal menjadi 13 subnet.
+    ![Vlsm](img/vlsm1.png)
+2.  Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan melakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
+    | Subnet  | Jumlah IP | Netmask   |
+    | ------- | --------- | --------- |
+    | A1      | 1001      | /22       |
+    | A2      | 2         | /30       |
+    | A3      | 2         | /30       |
+    | A4      | 101       | /25       |
+    | A5      | 2021      | /21       |
+    | A6      | 701       | /22       |
+    | A7      | 2         | /30       |
+    | A8      | 502       | /23       |
+    | A9      | 13        | /28       |
+    | A10     | 521       | /22       |
+    | A11     | 2         | /30       |
+    | A12     | 252       | /24       |
+    | A13     | 721       | /22       |
+    | Total   | 5841      | /19       |
+    Berdasarkan total IP dan netmask yang dibutuhkan, maka kita dapat menggunakan netmask /24 untuk memberikan pengalamatan IP pada subnet.
+3. Subnetting dengan menggunakan pohon untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada.
+4. Dari pohon dari pohon tersebut akan mendapat pembagian IP sebagai berikut.
+5. Untuk file .pkt dapat diakses [disini](vlsm.pkt).
+
+### CIDR - UML
+1. Membagi jaringan pada soal menjadi seperti gambar berikut.
+    ![Cidr](img/cidr1.png)    
+2. Pembagian IP dengan pohon berdasarkan penggabungan subnet yang telah dilakukan.
+3. Berdasarkan perhitungan, maka didapatkan pembagian IP sebagai berikut.
+4. Membuat `topologi.sh`
+5. Membuat `bye.sh`
